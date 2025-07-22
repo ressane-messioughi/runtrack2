@@ -1,0 +1,13 @@
+table {
+    width: 400px;
+    height: 400px;
+}
+
+table, th, td {
+    text-align: center;
+    border: solid 2px black;
+    border-collapse: collapse;
+}
+th {
+    background-color: burlywood;
+}

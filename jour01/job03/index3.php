@@ -1,3 +1,5 @@
+
+
 <?php
 
 $actif = false;
@@ -35,3 +37,9 @@ $taille = 1.75;
     <td><?php echo $taille ?></td>
   </tr>
 </table>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+</html>

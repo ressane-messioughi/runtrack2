@@ -14,7 +14,7 @@ echo "<tr><th>Type</th><th>Nom</th><th>Valeur</th></tr>";
 foreach ($variables as $nom_var => $valeur)
 
 
-    // On ignore les variables système et internes
+
     if (in_array($nom_var, ['_GET', '_POST', '_COOKIE', '_FILES', '_SERVER', '_ENV', '_REQUEST', 'GLOBALS', 'variables'])) {
         continue;
     }
