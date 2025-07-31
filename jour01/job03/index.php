@@ -1,39 +1,45 @@
+
+
 <?php
 
-$actif = true;
+$actif = false;
 $nom = "Ressane";
 $age = 28;
 $taille = 1.75;
-
-$variables = get_defined_vars();
-
-
-echo "<table border='1' cellpadding='5'>";
-echo "<tr><th>Type</th><th>Nom</th><th>Valeur</th></tr>";
-
-foreach ($variables as $nom_var => $valeur)
-
-
-
-    if (in_array($nom_var, ['_GET', '_POST', '_COOKIE', '_FILES', '_SERVER', '_ENV', '_REQUEST', 'GLOBALS', 'variables'])) {
-        continue;
-    }
-echo "<tr>";
-    echo "<td>" . gettype($valeur) . "</td>";
-    echo "<td>" . htmlspecialchars($nom_var) . "</td>";
-    
-    // Formatage de la valeur selon son type
-    if (is_array($valeur)) {
-        echo "<td>" . htmlspecialchars(print_r($valeur, true)) . "</td>";
-    } elseif (is_bool($valeur)) {
-        echo "<td>" . ($valeur ? 'true' : 'false') . "</td>";
-    } else {
-        echo "<td>" . htmlspecialchars((string)$valeur) . "</td>";
-    }
-
-    echo "</tr>";
-
-
-echo "</tbody></table>";
-
 ?>
+
+<table>
+
+  <tr>
+    <th>Type</th>
+    <th>Nom</th>
+    <th>Valeur</th>
+  </tr>
+    
+  <tr>
+    <td><?php echo gettype($actif)?></td>
+    <td>Actif</td>
+    <td><?php echo $actif ?></td>
+  </tr>
+  <tr>
+    <td><?php echo gettype($age)?></td>
+    <td>Age</td>
+    <td><?php echo $age ?></td>
+  </tr>
+  <tr>
+    <td><?php echo gettype($nom)?></td>
+    <td>Nom</td>
+    <td><?php echo $nom ?></td>
+  </tr>
+  <tr>
+    <td><?php echo gettype($taille)?></td>
+    <td>Taille</td>
+    <td><?php echo $taille ?></td>
+  </tr>
+</table>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+</html>

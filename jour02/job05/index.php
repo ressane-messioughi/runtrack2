@@ -12,7 +12,7 @@ for($i = 1 ; $i <= 1000 ; $i++) {
       
     }
     if($nombrediviseur == 1){
-        echo $i . " un seul diviseur <br/>"; 
+        echo $i. " un seul diviseur <br/>"; 
         
         
         } 

@@ -1,4 +1,4 @@
-<!-- 
+ <!-- 
 Créez un tableau contenant les nombres 200, 204, 173, 98, 171, 404, 459.
 Parcourez ce tableau et affichez pour chaque nombre “X est paire<br />” ou “X est
 impaire<br />”, sur votre page index.php. X prenant tour à tour chacune des valeurs
@@ -14,7 +14,7 @@ Ex. : 200 est paire
 
 <?php
 
-$tableau = array(200,204,173,98,171,404,459);
+$tableau = [200,204,173,98,171,404,459];
 
 foreach ($tableau as $nombre){
     if ($nombre % 2 == 0) {
